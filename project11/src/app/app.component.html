@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let det of dets">
+      <div
+        class="card mt-4"
+        [ngClass]="{'border-success': det.status === true,
+        'border-danger': det.status === false}"
+      >
+        <div class="card-body">
+          <h5 class="card-title">ID: {{det.id}}</h5>
+          <p class="card-text">{{det.name}}</p>
+          <button class="btn btn-outline-danger" (click)="deleteDet(det.id)">Удалить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-4">
+    <div class="card-body">
+      <div class="form-group">
+        <label for="idInput">ID датчика</label>
+        <input type="email" class="form-control" id="idInput" [(ngModel)]="inputId">
+      </div>
+      <div class="form-group">
+        <label for="nameInput">Название датчика</label>
+        <input type="email" class="form-control" id="nameInput" [(ngModel)]="inputName">
+      </div>
+      <button class="btn btn-outline-success" (click)="addDet()">Добавить датчик</button>
+    </div>
+  </div>
+</div>
