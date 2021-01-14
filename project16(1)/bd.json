@@ -1,11 +1,11 @@
 {
   "workers": [
     {
-      "name": "Дмитрий",
-      "surname": "Данилов",
+      "name": "Суровицкий",
+      "surname": "Михаил",
       "patronymic": "Алексеевич",
       "phone_number": "+7 (123) 123-12-32",
-      "email": "dimadanilov@mail.ru",
+      "email": "sur@mail.ru",
       "birthdate": "1988-03-12",
       "workplace": 0,
       "id": 1
